@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  background-image: url("../img/background.jpg");
+  background-size: cover;  /* Покриває весь екран */
+  background-position: center;  /* Центрує зображення */
+  background-repeat: no-repeat;  /* Зображення не повторюється */
+  height: 100vh;  /* Висота на весь екран */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -24,9 +32,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

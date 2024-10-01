@@ -1,0 +1,63 @@
+.film-card {
+    width: 20vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+    background-image: url('../img/card-background.png');
+}
+  
+.film-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.film-info {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("../img/info-card-background.jpg");
+}
+  
+.film-time {
+    margin-top: 10px;
+}
+  
+.nearest-showing {
+    font-weight: bold;
+    font-size: 14px;
+}
+  
+.time-box {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+  
+.schedule-link {
+    margin-top: 15px;
+}
+  
+.schedule-link button {
+    background-color: #444;
+    border: none;
+}
+  
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

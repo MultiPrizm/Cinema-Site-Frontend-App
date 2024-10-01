@@ -1,0 +1,15 @@
+
+.nav-panel{
+    position: fixed;
+    left: -10%;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: aqua;
+    z-index: 999;
+    transition: left 0.3s ease-in-out;
+}
+
+.nav-panel.active {
+    left: 0;
+  }

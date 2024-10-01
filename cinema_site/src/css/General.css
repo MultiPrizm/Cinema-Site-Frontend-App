@@ -1,0 +1,79 @@
+.General{
+    justify-content: center;
+    width: 100vw;
+}
+
+.carousel-item img {
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+    
+}
+
+.carousel-wide {
+    width: 100vw;
+    overflow: visible; /* Приховує контент, що виходить за межі контейнера */
+}
+
+.film-row {
+    display: flex;
+    justify-content: space-between; /* Розміщує картки рівномірно */
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+    width: 100%;
+}
+
+.film-card {
+    width: 25%;
+    margin: 5px;  /* Відстань між картками */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Робимо іконки чорними */
+    border-radius: 50%; /* Додаємо округлення */
+    padding: 10px; /* Збільшуємо відстань всередині кнопки */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Визначаємо ширину кнопок */
+    color: black; /* Робимо кнопки чорними */
+    justify-content: center; /* Вирівнюємо кнопки по центру */
+    align-items: center; /* Вирівнюємо кнопки по вертикалі */
+}
+
+
+/* Ключові кадри для анімації */
+@keyframes slide-up {
+    0% {
+      transform: translateY(0);  /* Початкове положення (на місці) */
+      opacity: 1;  /* Видимий */
+    }
+    100% {
+      transform: translateY(-100%);  /* Переміщається вгору за екран */
+      opacity: 0;  /* Зникає */
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }    
+}
+  
+/* Анімація для каруселі */
+.carousel-slide-up {
+    animation: slide-up 1s ease-in-out forwards;  /* 1s - тривалість, ease-in-out - плавність */
+}
+
+.carousel-slide-down {
+    animation: slide-down 1s ease-in-out forwards;  /* 1s - тривалість, ease-in-out - плавність */
+}
